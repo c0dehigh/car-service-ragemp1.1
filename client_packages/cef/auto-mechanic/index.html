@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/toastr/build/toastr.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="main">
+         <div class="rep">
+             <img src="./img/Daco_5771533.png" alt="auto car">
+             <h2 class="carname"></h2>
+             <div class="repCar">
+                <div class="box1 car-wash">
+                    <i class="fa fa-shower"></i>
+                    <i class="fa fa-usd" >300</i>
+                    <h1 class=" hover btn-ok-wash">OK</h1>
+                </div>
+                <div class="box1 car-fix">
+                    <i class="fa fa-wrench"></i>
+                    <i class="fa fa-usd" >1000</i>
+                    <h1 class=" hover btn-ok-repair">OK</h1>   
+                </div>
+             </div>
+             <h2 class="close">Close</h2>
+
+             
+         </div>
+
+
+     </div>
+     <script>
+         document.querySelector(".close").addEventListener("click",closeWeb)
+         function closeWeb(){
+            mp.trigger('closeBrowser');
+         }
+
+         document.querySelector(".btn-ok-wash").addEventListener("click",clearncar)
+
+         function clearncar(){
+            toastr.info('Are you the 6 fingered man?')
+            mp.trigger('cleanCar');
+            
+         }
+
+         document.querySelector(".btn-ok-repair").addEventListener("click",fixCar)
+
+            function fixCar(){
+            mp.trigger('fixCar');
+            }
+         
+         function start(car){
+            document.querySelector(".carname").innerText = car
+         }
+     </script>
+     <script src="./node_modules/toastr/build/toastr.min.js"></script>
+</body>
+</html>

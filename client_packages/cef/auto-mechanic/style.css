@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.062);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.rep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35em;
+  height: 35em;
+  border-radius: 6px;
+  background-color: #34495e8e;
+}
+
+.rep img {
+  margin-top: 0.5em;
+  width: 35em;
+}
+
+.rep h2 {
+  color: white;
+  text-align: center;
+}
+
+/* .box {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+} */
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: #bdc3c785;
+}
+
+.repCar {
+  margin-top: 4em;
+  display: flex;
+  width: auto;
+  height: 10em;
+  gap: 10px;
+  text-align: center;
+}
+
+i {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 1.5em;
+}
+
+.hover:hover {
+  cursor: pointer;
+  color: #2ecc71;
+}
+
+.close {
+  margin-top: 3em;
+  color: #d35400;
+  border-radius: 4px;
+  background-color: #2ecc71;
+}
+
+.close:hover {
+  cursor: pointer;
+  background-color: #2ecc71;
+}
