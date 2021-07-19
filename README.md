@@ -8,4 +8,4 @@ auto car service for RAGEMP 1.1
 
 freez at location  if u have money can do it  testet on ragemp version 1
 
-if u need help Discord id : #0123
+if u need help Discord id : high#0123
